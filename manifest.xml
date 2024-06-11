@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
+  <Id>ixo0SgKlDEG2XK8/OGEKWg==</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Gustavo</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Outlook Welcome"/>
+  <Description DefaultValue="Mensagem de bem vindo no email para novos integrantes"/>
+  <IconUrl DefaultValue="https://yourdomain.com/icon.png"/>
+  <HighResolutionIconUrl DefaultValue="https://images.pexels.com/photos/3825296/pexels-photo-3825296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+  <SupportUrl DefaultValue="https://yourdomain.com/support"/>
+  
+  <AppDomains>
+    <AppDomain>https://yourdomain.com</AppDomain>
+  </AppDomains>
+  
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="Mailbox"/>
+    </Sets>
+  </Requirements>
+  
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://localhost:3000/index.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  
+  <Permissions>ReadWriteItem</Permissions>
+</OfficeApp>
